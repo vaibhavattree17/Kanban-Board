@@ -160,6 +160,7 @@ const KanbanBoardWrapper = ({
  * - Task creation and editing
  */
 export const Default: Story = {
+  args: {} as any,
   render: () => (
     <KanbanBoardWrapper 
       initialColumns={sampleColumns} 
@@ -173,6 +174,7 @@ export const Default: Story = {
  * Useful for testing the initial state and empty state messages.
  */
 export const EmptyState: Story = {
+  args: {} as any,
   render: () => {
     const emptyColumns: KanbanColumn[] = [
       { id: 'todo', title: 'To Do', color: '#6b7280', taskIds: [] },
@@ -195,6 +197,7 @@ export const EmptyState: Story = {
  * Tests rendering performance, scrolling, and drag-and-drop with many items.
  */
 export const LargeDataset: Story = {
+  args: {} as any,
   render: () => {
     const { columns, tasks } = generateLargeDataset(100);
     
@@ -212,6 +215,7 @@ export const LargeDataset: Story = {
  * Columns stack vertically on small screens.
  */
 export const MobileView: Story = {
+  args: {} as any,
   parameters: {
     viewport: {
       defaultViewport: 'mobile1',
@@ -230,6 +234,7 @@ export const MobileView: Story = {
  * Typically displays 2 columns at a time with horizontal scrolling.
  */
 export const TabletView: Story = {
+  args: {} as any,
   parameters: {
     viewport: {
       defaultViewport: 'tablet',
@@ -248,6 +253,7 @@ export const TabletView: Story = {
  * Shows visual indicators when columns approach or reach their limits.
  */
 export const WithWIPLimits: Story = {
+  args: {} as any,
   render: () => {
     const wipColumns: KanbanColumn[] = [
       { 
@@ -293,6 +299,7 @@ export const WithWIPLimits: Story = {
  * Useful for simpler workflows.
  */
 export const ThreeColumns: Story = {
+  args: {} as any,
   render: () => {
     const threeColumns: KanbanColumn[] = [
       { id: 'todo', title: 'To Do', color: '#6b7280', taskIds: ['task-1', 'task-2', 'task-6'] },
@@ -314,6 +321,7 @@ export const ThreeColumns: Story = {
  * Tests horizontal scrolling and column management.
  */
 export const SixColumns: Story = {
+  args: {} as any,
   render: () => {
     const sixColumns: KanbanColumn[] = [
       { id: 'backlog', title: 'Backlog', color: '#9ca3af', taskIds: ['task-1'] },
@@ -338,6 +346,7 @@ export const SixColumns: Story = {
  * Try creating, editing, deleting tasks, and dragging them between columns.
  */
 export const InteractivePlayground: Story = {
+  args: {} as any,
   render: () => (
     <KanbanBoardWrapper 
       initialColumns={sampleColumns} 
