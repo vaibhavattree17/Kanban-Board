@@ -5,6 +5,7 @@ A production-grade, fully accessible Kanban Board component built with React, Ty
 ![Kanban Board Preview](https://via.placeholder.com/1200x600/f5f5f7/3b82f6?text=Modern+Kanban+Board)
 
 ## 🚀 Live Demo
+check live on - https://roaring-genie-78b4fe.netlify.app/
 
 - **Storybook**: Run `npm run storybook` to view all component variations
 - **Dev Server**: Run `npm run dev` to see the interactive demo
